@@ -1,0 +1,602 @@
+/*----------------------------------------------
+	common
+---------------------------------------------*/
+.mab10 {
+	margin-bottom: 10px!important;
+}
+.mab20 {
+	margin-bottom: 20px!important;
+}
+.mab30 {
+	margin-bottom: 30px!important;
+}
+.mab40 {
+	margin-bottom: 40px!important;
+}
+.mab50 {
+	margin-bottom: 50px!important;
+}
+.ALcenter {
+	text-align : center;
+}
+.ALright {
+	text-align : right;
+}
+.indent {
+	text-indent : -1em;
+	padding-left : 1em;
+}
+.pc {
+	display: block;
+}
+.sp {
+	display: none;
+}
+b {
+	font-weight: bold;
+}
+/*----------------------------------------------
+	トップページ
+---------------------------------------------*/
+
+/*RECRUIT*/
+
+#recruit_box {
+	background-color: #061D30;
+	text-align: center;
+}
+#recruit_box .catch {
+	padding: 25px 0 30px;
+	font-size: 1.8rem;
+	line-height: 2.0;
+}
+#recruit_box ul {
+	-webkit-justify-content: space-between;
+	-ms-justify-content : space-between;
+	justify-content : space-between;
+	width: 620px;
+	margin: 0 auto;
+}
+#recruit_box .btn a {
+	background-color: inherit;
+	text-align: center;
+	border-radius: 35px;
+	border: solid 1px #FFFFFF;
+}
+/*POLICY*/
+
+
+#policy_box {
+	background-color: #092A46;
+}
+#policy_box .ttl_box {
+	padding: 60px 0;
+	background-image: url(../../images/bg_policy.jpg);
+}
+#policy_box ul {
+	-webkit-justify-content: space-between;
+	-ms-justify-content : space-between;
+	justify-content : space-between;
+}
+#policy_box ul li {
+	position: relative;
+	width: 215px;
+	padding: 60px 30px 40px;
+	background-color: #083858;
+	font-size: 14px;
+}
+#policy_box ul li:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	right: auto;
+	bottom: auto;
+	margin: 0;
+	width: 109px;
+	height: 109px;
+}
+#policy_box ul li:nth-child(1):after {
+	background: url(../../images/icon_policy01.png) top left no-repeat;
+}
+#policy_box ul li:nth-child(2):after {
+	background: url(../../images/icon_policy02.png) top left no-repeat;
+}
+#policy_box ul li:nth-child(3):after {
+	background: url(../../images/icon_policy03.png) top left no-repeat;
+}
+#policy_box ul li h4 {
+	padding-bottom: 20px;
+	font-size: 1.8rem;
+	text-align: center;
+}
+#policy_box ul li h4 span {
+	display: inline-block;
+	font-size: 3.6rem;
+	font-weight: bold;
+}
+/*BLOG*/
+#blog_box {
+	background-color: #061D30;
+}
+#blog_box #blog_img {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 60px 0;
+}
+/*MEMBER*/
+#member_box {
+	background: url(../../images/bg_member.png) top center repeat;
+}
+#member_box #member_list {
+	margin: 60px 0;
+}
+#member_box .btn a {
+	border: 1px solid #FFFFFF;
+	background-color: inherit;
+}
+/*parallax*/
+#parallax {
+	height: 250px;
+	background-image: url(../../images/bg_parallax.jpg);
+}
+/*SCHEDULE*/
+#schedule_box .fl_l {
+	background: url(../../images/img_schedule.jpg) top center no-repeat;
+	background-size: cover;
+}
+/*INFORMATION*/
+
+#info_box {
+}
+#info_box .fl_r {
+	background: url(../../images/img_information.jpg) bottom center no-repeat;
+	background-size: cover;
+}
+/*----------------------------------------------
+	代表メッセージ
+---------------------------------------------*/
+
+/*hero*/
+#message #hero {
+	background-image: url(../../message/images/bg_h1.jpg);
+}
+/*main*/
+
+#message main .flex {
+	webkit-justify-content: space-between;
+	-ms-justify-content : space-between;
+	justify-content : space-between;
+	-webkit-align-items: flex-start;
+	-ms-align-items : flex-start;
+	align-items: flex-start;
+}
+#message main .profile {
+	width: 180px;
+}
+#message main .profile .title {
+	padding-top: 20px;
+	font-size: 1.4rem;
+}
+#message main .profile .name {
+	font-size: 2.0rem;
+}
+#message main .profile .name span {
+	display: inline-block;
+	padding-left: 1.0rem;
+	color: #818D96;
+	font-size: 1.2rem;
+}
+#message main .greeting {
+	width: 720px;
+}
+#message main .greeting p {
+	margin-bottom: 20px;
+}
+#message main .greeting p:last-of-type {
+	margin-bottom: 0px;
+}
+/*----------------------------------------------
+	医局員メンバー
+---------------------------------------------*/
+
+/*hero*/
+#member #hero {
+	background-image: url(../../member/images/bg_h1.jpg);
+}
+/*main*/
+
+#member .profile_box {
+	webkit-justify-content: space-between;
+	-ms-justify-content : space-between;
+	justify-content : space-between;
+	-webkit-align-items: flex-start;
+	-ms-align-items : flex-start;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+#member .profile_box:last-of-type {
+	margin-bottom: 40px;
+}
+#member .prof_l {
+	width: 200px;
+}
+#member .prof_r {
+	width: 700px;
+}
+#member .prof_r .title {
+	font-size: 1.4rem;
+}
+#member .prof_r .name {
+	font-size: 2.4rem;
+}
+#member .prof_r .name span {
+	display: inline-block;
+	padding: 0 0 5px 1.0rem;
+	color: #818D96;
+	font-size: 1.2rem;
+}
+#member .prof_r .comment {
+	padding-top: 20px;
+	font-size: 1.4rem;
+}
+/*----------------------------------------------
+	我々の仕事
+---------------------------------------------*/
+
+/*hero*/
+
+#work #hero {
+	background-image: url(../../work/images/bg_h1.jpg);
+}
+/*main*/
+
+#work h2 {
+	position: relative;
+	padding-left: 4em;
+	margin-bottom: 40px;
+}
+#work h2:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: -16px;
+	left: 10px;
+	right: auto;
+	bottom: auto;
+	margin: 0;
+	width: 75px;
+	height: 75px;
+}
+#work section {
+	margin-bottom: 60px;
+}
+#work section:last-of-type {
+	margin-bottom: 0px;
+}
+#work h2.work_01:after {
+	background: url(../../work/images/icon_h2_01.png) left center no-repeat;
+}
+#work h2.work_02:after {
+	background: url(../../work/images/icon_h2_02.png) left center no-repeat;
+}
+#work h2.work_03:after {
+	background: url(../../work/images/icon_h2_03.png) left center no-repeat;
+}
+#work h2.work_01:after, #work h2.work_02:after, #work h2.work_03:after {
+	background-size: 85%;
+}
+#work .medical th {
+	width: 50%;
+	text-align: center;
+}
+#work .medical td.case {
+	width: 15%;
+	background-color: #2A3E4E;
+	text-align: center;
+	vertical-align: middle;
+}
+#work .medical td.not_case {
+	text-align: center;
+	vertical-align: middle;
+}
+#work .result {
+	webkit-justify-content: space-between;
+	-ms-justify-content : space-between;
+	justify-content : space-between;
+	-webkit-align-items: center;
+	-ms-align-items : center;
+	align-items: center;
+}
+#work .result li {
+	width: 445px;
+	padding: 15px 0;
+	border: 3px #FFFFFF solid;
+	background-color: #13293B;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+#work .result li span {
+	display: inline-block;
+	padding: 5px;
+	font-size: 1.4rem;
+}
+/*----------------------------------------------
+	ブログ一覧
+---------------------------------------------*/
+
+/*hero*/
+
+#blog #hero {
+	background-image: url(../../blog/images/bg_h1.jpg);
+}
+/*main*/
+
+#blog main {
+	webkit-justify-content: space-between;
+	-ms-justify-content : space-between;
+	justify-content : space-between;
+	-webkit-align-items: flex-start;
+	-ms-align-items : flex-start;
+	align-items: flex-start;
+}
+#blog main.section {
+	padding: 60px 0;
+}
+#blog main a {
+	color: #061D30;
+}
+#blog #blog_list article {
+	width: 700px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+}
+#blog #blog_list .article_r {
+	width: 100%;
+	padding: 15px;
+}
+#blog #blog_list .item {
+	-webkit-align-items: center;
+	-ms-align-items : center;
+	align-items: center;
+}
+#blog #blog_list .item .cate {
+	width: 115px;
+	margin-right: 15px;
+	padding: 5px 0;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	text-align: center;
+}
+#blog #blog_list .article_r h2 {
+	margin: 20px 0 0;
+	padding: 0;
+	background-color: inherit;
+	font-size: 1.8rem;
+}
+#blog #blog_list .article_r .name_box {
+	margin-top: 5px;
+	font-size: 1.2rem;
+}
+/*記事ページ	*/
+#blog #blog_inner {
+	width: 700px;
+	margin-bottom: 40px;
+}
+#blog #blog_inner #eyecatch {
+	margin-bottom: 40px;
+}
+#blog #blog_inner .item {
+	-webkit-align-items: center;
+	-ms-align-items : center;
+	align-items: center;
+}
+#blog #blog_inner .item .cate {
+	width: 115px;
+	margin-right: 15px;
+	padding: 5px 0;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	text-align: center;
+}
+#blog #blog_inner h1 {
+	margin-top: 20px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+#blog #blog_inner .name_box {
+	margin-top: 10px;
+	color: #818D96;
+}
+#blog #blog_inner #text_area {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px #818D96 solid;
+}
+#blog #blog_inner #text_area p {
+	margin-bottom: 20px;
+}
+#blog #blog_inner #text_area p:last-of-type {
+	margin-bottom: 0;
+}
+/*	サイドメニュー*/
+
+.ct_staff {
+	background-color: #0284B8;
+}
+#blog #side_bar {
+	width: 260px;
+}
+#blog #side_bar li {
+	margin-bottom: 1px;
+	background-color: #FFFFFF;
+	color: #061D30;
+}
+#blog #side_bar h3 {
+	margin-bottom: 0;
+	padding: 15px 0;
+	background-color: #05344F;
+	color: #FFFFFF;
+	border: 1px #FFFFFF solid;
+	font-size: 1.6rem;
+	text-align: center;
+}
+#blog #side_bar #pickup {
+	margin-bottom: 40px;
+}
+#blog #side_bar #pickup h3:before {
+	background: url(../../blog/images/icon_yubi.png) 0 0 no-repeat;
+	-ms-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding-left: 5px;
+	position: relative;
+	top: 2px;
+}
+#blog #side_bar #pickup li a {
+	padding: 10px;
+}
+#blog #side_bar #pickup .pickup_r {
+	margin-left: 10px;
+}
+#blog #side_bar #pickup .pickup_r h5 {
+	padding-bottom: 5px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+#blog #side_bar #pickup .pickup_r .post {
+	font-size: 1.2rem;
+	color: #888888;
+}
+#blog #side_bar #pickup img {
+	width: 85px;
+}
+#blog #side_bar #ct_list h3:before {
+	background: url(../../blog/images/icon_book.png) 0 0 no-repeat;
+	-ms-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding-left: 10px;
+	position: relative;
+	top: 5px;
+}
+#blog #side_bar #ct_list li a {
+	display: block;
+	padding: 15px;
+}
+#blog #side_bar #ct_list li a:before {
+	background: url(../../blog/images/icon_arrow.png) 0 0 no-repeat;
+	-ms-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-left: 10px;
+	position: relative;
+	top: 2px;
+}
+/*----------------------------------------------
+	今後のスケジュール
+---------------------------------------------*/
+
+/*hero*/
+
+#schedule #hero {
+	background-image: url(../../schedule/images/bg_h1.jpg);
+}
+/*main*/
+
+#schedule section {
+	margin-bottom: 60px;
+}
+#schedule section:last-of-type {
+	margin-bottom: 0;
+}
+#schedule section h2 {
+	margin-bottom: 20px;
+	font-size: 2.0rem;
+}
+#schedule th {
+	width: 15%;
+	text-align: center;
+	vertical-align: middle;
+}
+/*----------------------------------------------
+	サイトマップ
+---------------------------------------------*/
+
+/*hero*/
+
+#sitemap #hero {
+	background-image: url(../../sitemap/images/bg_h1.jpg);
+}
+/*main*/
+
+#sitemap main li a {
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	border: 1px solid #818D96;
+}
+#sitemap main li a {
+	display: block;
+}
+#sitemap main li a:hover {
+	opacity: 1;
+	background-color: #203445;
+}
+/*----------------------------------------------
+	病院概要
+---------------------------------------------*/
+
+/*hero*/
+
+#outline #hero {
+	background-image: url(../../sitemap/images/bg_h1.jpg);
+}
+/*main*/
+
+#outline section {
+	margin-bottom: 40px;
+}
+#outline table a {
+	text-decoration: underline;
+}
+
+#outline #access{
+	margin-top: -85px;
+    padding-top: 85px;
+}
+
+/*----------------------------------------------
+	clearfix
+---------------------------------------------*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;/*¥*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}

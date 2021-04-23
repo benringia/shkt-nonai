@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+
+/*
+Zarigani Design Office Drawer Menu
+Copyright 2018 Zarigani Design Office
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+.zdo_drawer_menu * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+
+.zdo_drawer_menu a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.zdo_drawer_menu a:visited {
+  color: inherit;
+}
+
+.zdo_drawer_menu .zdo_drawer_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(51, 51, 51, 0.5);
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.zdo_drawer_menu .zdo_drawer_button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 42px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  position: fixed;
+  top:10px;
+  right: 30px;
+  z-index: 1001;
+  text-align: center;
+  outline: none;
+}
+
+.zdo_drawer_menu .zdo_drawer_button.active .zdo_drawer_bar {
+  width: 49px;
+}
+
+.zdo_drawer_menu .zdo_drawer_button.active .zdo_drawer_bar1 {
+  transform: rotate(30deg);
+}
+
+.zdo_drawer_menu .zdo_drawer_button.active .zdo_drawer_bar2 {
+  opacity: 0;
+}
+
+.zdo_drawer_menu .zdo_drawer_button.active .zdo_drawer_bar3 {
+  transform: rotate(-30deg);
+}
+
+.zdo_drawer_menu .zdo_drawer_button.active .zdo_drawer_menu_text {
+  display: none;
+}
+
+.zdo_drawer_menu .zdo_drawer_button.active .zdo_drawer_close {
+  display: block;
+}
+
+.zdo_drawer_menu .zdo_drawer_bar {
+  display: block;
+  height: 2px;
+  margin: 10px 0;
+  transition: all 0.2s;
+  transform-origin: 0 0;
+}
+
+.zdo_drawer_menu .zdo_drawer_text {
+  text-align: center;
+  font-size: 10px;
+}
+
+.zdo_drawer_menu .zdo_drawer_close {
+  letter-spacing: 0.08em;
+  display: none;
+}
+
+.zdo_drawer_menu .zdo_drawer_menu_text {
+  display: block;
+}
+
+.zdo_drawer_menu .zdo_drawer_nav_wrapper {
+  width:100%;
+  height: 100%;
+  transition: all 0.2s;
+  transform: translate(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color:#061D30;
+}
+
+.zdo_drawer_menu .zdo_drawer_nav_wrapper.open {
+  transform: translate(0);
+}
+
+/*+++ Default Navigation CSS +++*/
+.zdo_drawer_menu .zdo_drawer_nav {
+  padding: 85px 20px 0;
+}
+
+.zdo_drawer_menu .zdo_drawer_nav li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+	
+.zdo_drawer_menu .zdo_drawer_nav li a{
+  display: block;
+	padding: 10px 20px;
+	border: 1px solid #818D96;
+	font-size: 1.4rem
+}
+
+.zdo_drawer_menu .zdo_drawer_nav li a:hover{
+	opacity:1;
+	background-color: #203445;
+}	
+
+.zdo_drawer_menu .zdo_drawer_nav .accordionlist dt {
+    margin-bottom: 10px;
+	font-size: 1.4rem
+	}
+	
+	
+	
+	
+
+/*+++ Default Button Color +++*/
+	
+.zdo_drawer_menu .zdo_drawer_button{
+  color:#FFFFFF;
+}
+.zdo_drawer_menu .zdo_drawer_button .zdo_drawer_bar{
+  background-color:#FFFFFF;
+}
+
+/*スクロール時*/
+header.is-animation .zdo_drawer_menu .zdo_drawer_button {
+  color: #092A46;
+}
+header.is-animation .zdo_drawer_menu .zdo_drawer_button .zdo_drawer_bar {
+  background-color: #092A46;
+}
+	
+
+/*メニューOPEN時*/
+header  .zdo_drawer_menu .active{
+  color:#FFFFFF !important;
+}
+header .zdo_drawer_menu .active .zdo_drawer_bar {
+  background-color:#FFFFFF !important;
+}
+	
+	
+	
+	
+	
+}

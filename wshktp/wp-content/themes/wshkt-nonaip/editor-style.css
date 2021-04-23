@@ -1,0 +1,66 @@
+body {
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Verdana,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	line-height: 1.6;
+	color: #222;
+	/*1em=16px , 0.875em=14px*/
+	font-size: 0.9em;
+	width: 100%;
+	word-wrap: break-word;
+	min-width: 1020px;
+}
+
+a { color: #333; text-decoration: none;}
+a:hover { color: #222; text-decoration: none;}
+
+
+/*エディタ用*/
+
+/* ビジュアルエディタのフォントはこのクラスで指定 */
+body.mceContentBody {
+    font: 14px;
+    font-family: 'メイリオ','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック';
+}
+ 
+.editor-area {
+    margin: 0px 20px 0.5em 20px;
+    font-size:14px;
+    line-height:150%;
+}
+ 
+/* aタグのスタイル */
+.editor-area a {
+    color: #46C9F2;
+    text-decoration: underline;
+}
+
+/* 見出し2 */
+ h2 {
+    background: #A8ADCD;
+    padding: 0.5em;
+    color: #fff;
+    border-radius: 4px;
+    border-left:4px solid #8872B1;
+    font-size:18px;
+    margin: 0 0 0.5em;
+}
+
+/* 見出し3 */
+h3 {
+    text-align: left;
+    margin: 0 0 0.5em;
+    padding: 0.5em 0.5em 0;
+    color: #666;
+    font-size: 16px;
+    border-bottom: #8872B1 3px solid;
+}
+
+/* 見出し4 */
+h4 {
+    border-bottom: 1px dashed #c6c8dd;
+    padding: 0.5em 0.5em 0;
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 0 0 0.5em;
+}
+
+

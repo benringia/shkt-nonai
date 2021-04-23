@@ -1,0 +1,21 @@
+﻿@media print{
+
+ body{
+    -webkit-print-color-adjust: exact;
+ }
+
+	#header,
+	#header_in,
+	#sidebar,
+	#footer,
+	#bnr_area,
+	#footer_sitemap,
+	.present_btn,
+	#page_to_top { display:none;}
+
+	#main {	background: none;}
+
+	#contents_in {margin: 0; padding: 0;background: none; box-shadow:none;}
+	#contents { width: 100%; margin: 0 auto; float: none; margin-top: -150px; margin-left: 20px; background: none; box-shadow:none;}
+
+}

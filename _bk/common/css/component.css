@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+
+/*----------------------------------------------
+	アコーディオンメニュー
+---------------------------------------------*/
+
+.accordionlist dt{
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	border: 1px solid #818D96;
+}
+
+.accordionbox li a:hover{
+	opacity:1;
+	background-color: #203445;
+}
+
+.accordionlist dt{
+	webkit-justify-content: space-between;
+	-ms-justify-content : space-between;
+	justify-content : space-between;
+	-webkit-align-items: center;
+	-ms-align-items : center;
+	align-items: center;
+}
+
+.accordionlist dd{
+	display:none;
+}
+
+.accordionlist  dd .category li a{
+	background-color:#203445;
+	border:none !important;
+}
+
+.accordionlist  dd .category li a:hover{
+	opacity:0.6;
+}
+
+.accordion_icon,
+.accordion_icon span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.accordion_icon {
+	position: relative;
+	width: 30px;
+	height:10px;
+}
+
+.accordion_icon span {
+	position: absolute;
+    left: 6px;
+    width: 50%;
+	height: 2px;
+    background-color: #FFFFFF;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+.accordion_icon span:nth-of-type(1) {
+    top: 5px;
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.accordion_icon span:nth-of-type(2) {
+    top: 5px;
+	transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+
+/*＋、－切り替え*/
+.accordion_icon.active span:nth-of-type(1) {
+	display:none;
+}
+.accordion_icon.active span:nth-of-type(2) {
+	top: 5px;
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+
+
+/*----------------------------------------------
+	スクロールアイコン
+---------------------------------------------*/
+
+#hero .scroll {
+	position: absolute;
+}
+.scroll {
+	position: fixed;
+	bottom: 2%;
+	left: 50%;
+	z-index: 1;
+	display: inline-block;
+	-moz-transform: translate(-50%, -2%);
+	-webkit-transform: translate(-50%, -2%);
+	transform: translate(-50%, -2%);
+	text-decoration: none;
+}
+.scroll {
+	padding-top: 60px;
+	font-size: 1.2rem;
+}
+.scroll span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 30px;
+	height: 50px;
+	margin-left: -15px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+.scroll span::before {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: #fff;
+	border-radius: 100%;
+	-webkit-animation: sdb 2s infinite;
+	animation: sdb 2s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+ 0% {
+ -webkit-transform: translate(0, 0);
+ opacity: 0;
+}
+ 40% {
+ opacity: 1;
+}
+ 80% {
+ -webkit-transform: translate(0, 20px);
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@keyframes sdb {
+ 0% {
+ transform: translate(0, 0);
+ opacity: 0;
+}
+ 40% {
+ opacity: 1;
+}
+ 80% {
+ transform: translate(0, 20px);
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+/*----------------------------------------------
+	パララックス
+---------------------------------------------*/
+.parallax {
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+/*----------------------------------------------
+	テーブル
+---------------------------------------------*/
+
+table {
+	width: 100%;
+	border: 1px solid #818D96;
+}
+table th {
+	width: 25%;
+	background-color: #05344F;
+}
+table th,
+table td {
+	padding: 10px 15px;
+	border-bottom: 1px solid #818D96;
+	border-left: 1px solid #818D96;
+	vertical-align: middle;
+}
+
+/*----------------------------------------------
+	ボタン
+---------------------------------------------*/
+
+.btn a {
+	display: block;
+	position: relative;
+	width: 280px;
+	margin: 0 auto;
+	padding: 20px 0;
+	background-color: #2B3F4F;
+	text-align: center;
+}
+.btn a:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: auto;
+	right: 10%;
+	bottom: auto;
+	margin: 0;
+	width: 10px;
+	height: 10px;
+	border-top: solid 1px #FFFFFF;
+	border-right: solid 1px #FFFFFF;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/*----------------------------------------------
+	フレックスボックス
+---------------------------------------------*/
+
+.flex {
+	display : -webkit-flex;
+	display : -ms-flexbox;
+	display: flex;
+}
+/*----------------------------------------------
+	2カラムレイアウト
+---------------------------------------------*/
+.column2 .fl_l, .fl_r {
+	position: relative;
+	width: 50%;
+	height: 350px;
+	background-color: #FFFFFF;
+	color: #333333;
+}
+.column2 .fl_r .text_box {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.column2 .fl_l .text_box {
+	position: absolute;
+	top: 50px;
+	right: 220px;
+}
+.column2 h3 {
+	margin-bottom: 10px;
+}
+.column2 b {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.column2 .btn a {
+	width: 260px;
+	margin: 50px 0;
+	padding-left: 20px;
+	background-color: #092A46;
+	text-align: left;
+}
+
+
+@media screen and (max-width: 640px) {
+/*----------------------------------------------
+	ボタン
+---------------------------------------------*/
+
+.btn a {
+	width: 85%;
+	padding: 15px 0;
+	border-radius: 35px;
+}
+.btn a:after {
+	top: 23px;
+}
+/*----------------------------------------------
+	2カラムレイアウト
+---------------------------------------------*/
+
+.column2 .fl_l, .fl_r {
+	position: inherit;
+	width: 100%;
+	height: auto;
+}
+.column2 .text_box {
+	position: inherit;
+	padding: 30px;
+	text-align: center;
+}
+.column2 .fl_r .text_box, .column2 .fl_l .text_box {
+	position: inherit;
+}
+.column2 h3 {
+	width: 100%;
+	margin: 0 auto 5px;
+}
+.column2 b {
+	display: inline-block;
+	margin-bottom: 15px;
+	font-size: 1.4rem;
+}
+.column2 .btn a {
+	width: 100%;
+	margin: 20px 0 0;
+	padding-left: 0px;
+	background-color: #092A46;
+	text-align: center;
+}
+#schedule_box h3 {
+	width: 55%;
+}
+#info_box h3 {
+	width: 75%;
+}
+
+/*----------------------------------------------
+	テーブル
+---------------------------------------------*/
+
+table, tbody, thead, tfoot, tr, th, td {
+    display: block;
+	text-align: center;
+}
+	
+table th {
+    width:auto;
+	font-weight: bold;
+	}
+	
+table th,table td {
+   font-size: 1.4rem;
+	}
+	
+}

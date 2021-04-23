@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+/*----------------------------------------------
+	common
+---------------------------------------------*/
+
+.pc {
+	display: none;
+}
+.sp {
+	display: block;
+}
+/*----------------------------------------------
+	トップページ
+---------------------------------------------*/
+
+/*RECRUIT*/
+
+#recruit_box .catch {
+	padding: 25px 0 30px;
+	font-size: 1.6rem;
+	line-height: 2.0;
+}
+#recruit_box img {
+	width: 85%;
+}
+#recruit_box ul {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+	width: auto;
+	margin-bottom: -20px;
+}
+#recruit_box .btn a {
+	margin-bottom: 20px;
+	padding: 10px 0;
+}
+#recruit_box .btn a:after {
+	top: 17px;
+}
+/*POLICY*/
+
+#policy_box .ttl_box {
+	padding: 40px 0;
+	background-attachment: inherit;
+	background-position: left bottom;
+}
+#policy_box ul {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+}
+#policy_box ul li {
+	width: auto;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+#policy_box ul li:last-of-type {
+	margin-bottom: 0px;
+}
+#policy_box ul li:after {
+	top: 21px;
+	left: 25px;
+}
+#policy_box ul li:nth-child(1):after, #policy_box ul li:nth-child(2):after, #policy_box ul li:nth-child(3):after {
+	background-size: 50%;
+}
+#policy_box ul li h4 {
+	padding: 0 0 20px 3em;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: left;
+}
+#policy_box ul li h4 span {
+	font-size: 2.2rem;
+}
+/*BLOG*/
+
+#blog_box #blog_img {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+	margin: 40px 0;
+}
+#blog_box #blog_img article {
+	margin-bottom: 15px;
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+#blog_box #blog_img .blog_catch img {
+	width: 100%;
+	height: auto;
+}
+#blog_box #blog_img .article_r {
+	width: 100%;
+	padding-left: 10px;
+}
+#blog_box #blog_img .item .cate {
+	width: 50%;
+	margin-bottom: 5px;
+	padding: 1px 0;
+	color: #FFFFFF;
+	font-size: 1.0rem;
+	text-align: center;
+}
+#blog_box #blog_img .item .post {
+	margin-bottom: 5px;
+	color: #061D30;
+	font-size: 1.2rem;
+}
+#blog_box #blog_img .bl_ttl {
+	color: #061D30;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+/*MEMBER*/
+#member_box #member_list {
+	margin: 40px 0;
+}
+/*parallax*/
+#parallax {
+	height: 150px;
+	background-attachment: inherit;
+	background-position: center bottom;
+}
+/*SCHEDULE*/
+#schedule_box {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+}
+#schedule_box .fl_l {
+	min-height: 250px;
+}
+/*INFORMATION*/
+	
+#info_box {
+	-webkit-flex-direction: column-reverse;
+	-ms-flex-direction : column-reverse;
+	flex-direction: column-reverse;
+}
+#info_box .fl_r {
+	min-height: 250px;
+}
+/*----------------------------------------------
+	代表メッセージ
+---------------------------------------------*/
+
+/*main*/
+#message main .flex {
+	-webkit-flex-direction: column-reverse;
+	-ms-flex-direction : column-reverse;
+	flex-direction: column-reverse;
+}
+#message main .profile {
+	width: 100%;
+}
+#message main .profile .title {
+	padding-top: 20px;
+	font-size: 1.6rem;
+}
+#message main .profile .name {
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+#message main .profile .name span {
+	padding-bottom: 5px;
+	font-size: 1.4rem;
+}
+#message main .greeting {
+	width: 100%;
+}
+#message main .greeting p:last-of-type {
+	margin-bottom: 40px;
+}
+/*----------------------------------------------
+	医局員メンバー
+---------------------------------------------*/
+
+/*main*/
+
+#member .profile_box {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+}
+#member .profile_box:last-of-type {
+	margin-bottom: 0px;
+}
+#member .prof_l {
+	width: 100%;
+}
+#member .prof_r {
+	width: 100%;
+	padding-top: 20px;
+}
+#member .prof_r .title {
+	font-size: 1.6rem;
+}
+#member .prof_r .name {
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+#member .prof_r .name span {
+	font-size: 1.4rem;
+}
+#member .prof_r .comment {
+	padding-top: 10px;
+}
+/*----------------------------------------------
+	我々の仕事
+---------------------------------------------*/
+
+/*main*/
+#work h2 {
+	position: relative;
+	padding-left: 4em;
+	margin-bottom: 20px;
+}
+#work h2:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: -17px;
+	left: 10px;
+	right: auto;
+	bottom: auto;
+	margin: 0;
+	width: 75px;
+	height: 75px
+}
+#work section {
+	margin-bottom: 60px;
+}
+#work section p {
+	padding: 0 10px;
+}
+#work h2.work_01:after, #work h2.work_02:after, #work h2.work_03:after {
+	background-size: 80%;
+}
+#work .result {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+#work .result:before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: -75px;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	margin: 0;
+	border: 100px solid transparent;
+	border-top: 50px solid #455664;
+}
+#work .result li {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 2.0rem;
+}
+#work .result li.sp {
+	padding: 15px 0;
+	border: none;
+	background-color: inherit;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+/*----------------------------------------------
+	ブログ一覧
+---------------------------------------------*/
+
+/*main*/
+
+#blog main {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+}
+#blog main.section {
+	padding: 30px 5px 40px;
+}
+#blog #blog_list article {
+	width: auto;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+#blog_box #blog_img .blog_catch img {
+	width: 100%;
+	height: auto;
+}
+#blog #blog_list .article_r {
+	width: 100%;
+	padding: 0 0 0 10px;
+	background-color: #FFFFFF;
+}
+#blog #blog_list .item {
+	-webkit-flex-direction: column;
+	-ms-flex-direction : column;
+	flex-direction: column;
+	-webkit-align-items: flex-start;
+	-ms-align-items : flex-start;
+	align-items: flex-start;
+}
+#blog #blog_list .item .cate {
+	width: 50%;
+	margin-bottom: 5px;
+	padding: 1px 0;
+	font-size: 1.0rem;
+}
+#blog #blog_list .item .post {
+	margin-bottom: 5px;
+	color: #061D30;
+	font-size: 1.2rem;
+}
+#blog #blog_list .article_r h2 {
+	margin: 0;
+	font-size: 1.4rem;
+}
+#blog #blog_list .article_r .name_box {
+	display: none
+}
+/*記事ページ	*/
+#blog #blog_inner {
+	width: 100%;
+}
+#blog #blog_inner #eyecatch {
+	margin-bottom: 20px;
+}
+#blog #blog_inner .item .cate {
+	width: auto;
+	padding: 5px 15px;
+	font-size: 1.4rem;
+}
+#blog #blog_inner .item .post {
+	font-size: 1.6rem;
+}
+#blog #blog_inner h1 {
+	margin-top: 10px;
+	font-size: 2.4rem;
+}
+#blog #blog_inner .name_box {
+	margin-top: 5px;
+}
+#blog #blog_inner #text_area {
+	margin-top: 40px;
+	padding-top: 20px;
+}
+/*	サイドメニュー*/
+	
+.ct_staff {
+	background-color: #0284B8;
+}
+#blog #side_bar {
+	width: 100%;
+}
+#blog #side_bar #pickup {
+	margin-bottom: 20px;
+}
+#blog #side_bar #pickup img {
+	width: 100px;
+	height: auto;
+}
+#blog #side_bar #ct_list li a {
+	font-weight: bold;
+}
+#blog #side_bar #ct_list h3:before, #blog #side_bar #ct_list li a:before {
+	background-size: 65%;
+}
+/*----------------------------------------------
+	今後のスケジュール
+---------------------------------------------*/
+
+/*main*/
+
+#schedule section {
+	margin-bottom: 40px;
+}
+#schedule section h2 {
+	margin-bottom: 20px;
+	padding-left: 0;
+	font-size: 2.0rem;
+	text-align: center;
+}
+#schedule th {
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+#schedule table th, td {
+	padding: 10px 15px;
+}
+#schedule td {
+	text-align: left !important;
+}
+/*----------------------------------------------
+	病院概要
+---------------------------------------------*/
+
+/*main*/
+
+#outline p, #outline li {
+	font-size: 1.2rem;
+	text-align: left;
+}
+#outline iframe {
+	width: 100%;
+	height: 250px;
+}
+	
+#outline #access{
+	margin-top: -75px;
+    padding-top: 75px;
+}
+	
+	
+}

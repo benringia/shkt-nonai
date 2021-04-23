@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0 auto;
+	padding: 0;
+   }
+	
+img {
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+
+html {
+    overflow: auto;
+	 color:#ffffff;
+}
+
+.wrap{
+	margin:0 auto;
+	width:1000px;
+}
+#section{
+	background: url(../images/bg_demo.jpg)  repeat-x;
+}
+#section02{
+	background: url(../images/bg_demo02.jpg)  repeat-x;
+}
+#photo{
+	height:200px;
+	background: url(../images/bg_photo.jpg)  repeat-x;
+}
+
+
+

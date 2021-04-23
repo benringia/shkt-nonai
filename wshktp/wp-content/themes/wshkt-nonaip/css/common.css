@@ -1,0 +1,68 @@
+/*ーーーーーーーーーーーーーーーーーーーーーーーーー
+* name : Common CSS File
+* version : 1.0
+* update : 2014/01/28
+ーーーーーーーーーーーーーーーーーーーーーーーーー*/
+/*センタリング*/
+.center { text-align: center; display: block; margin: 0 auto; }
+.tac { text-align: center; }
+.vam { vertical-align: middle; }
+
+/*文字詰め*/
+.ls1 { letter-spacing: -1px; }
+.ls2 { letter-spacing: -2px; }
+.ls3 { letter-spacing: -3px; }
+.ls4 { letter-spacing: -4px; }
+.ls5 { letter-spacing: -5px; }
+
+.ls1_plus { letter-spacing: 0.1em; margin-left: -0.1em;}
+.ls2_plus { letter-spacing: 0.2em; margin-left: -0.1em;}
+.ls3_plus { letter-spacing: 0.3em; margin-left: -0.1em;}
+.ls4_plus { letter-spacing: 0.4em; margin-left: -0.1em;}
+.ls5_plus { letter-spacing: 0.5em; margin-left: -0.1em;}
+
+/*オブジェクトの表示非表示*/
+.db { display: block; }
+.dn { display: none; }
+
+/*簡易float*/
+.fl { float: left; }
+.fr { float: right; }
+
+/*テキストの最初の文字を1文字分下げる*/
+.ti1 { text-indent: 1em; }
+
+/*フォント装飾*/
+.fz20 { font-size: 20px; }
+.fwb { font-weight: bold; }
+
+/*確認用*/
+.bd {border: 1px solid #000;}
+.bg {background: #0203de;}
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーー
+
+jQuery		
+
+ーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+/*ページトップ*/
+#page_to_top {
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	margin-left: 510px;
+	width: 50px;
+	height: auto;
+}
+
+#page_to_top img {
+	width: 100%;
+	height: auto;
+}
+
+#page_to_top,
+.click_area,
+.clickable {
+	cursor:pointer;
+}

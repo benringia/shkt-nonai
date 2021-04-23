@@ -1,0 +1,241 @@
+@charset "utf-8";
+ @media screen and (max-width: 640px) {
+/*----------------------------------------------
+	body
+---------------------------------------------*/
+body {
+	font-size: 1.4rem; /*16px*/
+	line-height: 1.6;
+}
+/*----------------------------------------------
+	wrap
+---------------------------------------------*/
+
+.wrap {
+	width: auto;
+	padding: 0 15px;
+}
+.wrap-margin {
+	width: auto;
+	padding: 0 20px;
+}
+.wrap-30 {
+	width: auto;
+	padding: 0 30px;
+}
+/*----------------------------------------------
+	header
+---------------------------------------------*/
+	
+	
+header #logo #svg {
+	width: 80%;
+}
+header #header_box {
+	padding: 25px 20px 15px;
+}
+header.is-animation li a {
+	font-weight: normal;
+}
+header .open li a {
+	color: #FFFFFF !important;
+}
+/*----------------------------------------------
+	nav
+---------------------------------------------*/
+nav {
+	position: fixed;
+	width: 312px;
+	height: 100%;
+	transition: all 0.2s;
+	transform: translate(312px);
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: #FFF;
+	overflow: auto;
+}
+nav.open {
+	transform: translate(0);
+}
+button {
+	display: block;
+	background: none;
+	border: none;
+	padding: 0;
+	width: 42px;
+	color: #276490;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	font-weight: 600;
+	position: fixed;
+	z-index: 1001;
+	text-align: center;
+	outline: none;
+}
+button .bar {
+	display: block;
+	height: 2px;
+	background-color: #276490;
+	margin: 10px 0;
+	transition: all 0.2s;
+	transform-origin: 0 0;
+}
+button .menu {
+	display: block;
+	text-align: center;
+}
+/*----------------------------------------------
+	hero
+---------------------------------------------*/
+
+#top #hero_sp {
+	position: relative;
+	height: 100vh;
+	background: url(../../images/video/dot.png);
+	background-size: 2px;
+}
+#top #hero_sp #visual_sp {
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#top #hero_sp #ttl_box {
+	width:100%;
+	position: absolute;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	    text-align: center;
+}
+
+#top #hero_sp #ttl_box img{
+	width:85%;
+}
+/*中ページ*/
+
+.inner #hero .ttl-body {
+	padding: 80px 0 30px;
+}
+.inner #hero .ttl-body h1 img {
+	width: 60%;
+	height: auto;
+	padding-bottom: 0;
+}
+.inner #hero .ttl-body h4 {
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+}
+/*----------------------------------------------
+	pankuzu
+---------------------------------------------*/
+
+#pankuzu ul {
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap :wrap;
+	flex-wrap:wrap;
+	padding-top:0px;
+}
+	 
+	 #pankuzu ul li {
+	padding-right:25px;
+	font-size: 1.2rem;
+	color: #5D6C78;
+		padding-top: 10px;
+}
+	 
+	 
+/*----------------------------------------------
+	main
+---------------------------------------------*/
+	
+main img {
+	max-width: 100%;
+	height: auto;
+}
+/* トップページ */
+
+/* #top .ttl_box h2 img {
+	width: 100%;
+} */
+#top .section {
+	padding: 20px 0 40px;
+}
+#top .ttl_box p {
+	margin-top: 10px;
+	font-size: 1.4rem;
+}
+/* 中ページ */
+.inner h2 {
+	margin-bottom: 20px;
+	padding: 10px 0 10px 1em;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.inner h3 {
+	margin-bottom: 10px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+.inner .section {
+	padding: 30px 5px 40px;
+}
+/*----------------------------------------------
+	footer
+---------------------------------------------*/
+	
+	
+footer #footer {
+	padding: 30px 15px;
+	text-align: center;
+}
+footer #footer img {
+	width: 85%;
+	height: auto;
+	padding: 0 0 10px 0;
+}
+footer ul {
+	margin: 20px 0 -10px 0;
+}
+footer ul li {
+	padding-right: 0px;
+}
+footer ul li a {
+	display: block;
+	width: auto;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	background-color: #2B3F4F;
+	text-align: center;
+}
+footer address {
+	margin-left: 0px;
+}
+
+footer #copyright {
+	font-size: 1.0rem;
+}
+
+footer .flex {
+	display: block !important;
+}
+
+ }
+
+ /*===================================================
+	flex
+=========================================*/
+
+	
+@media (min-width: 641px) {
+	.hidden-min {
+		display: none !important;
+	}
+}

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+.mw_wp_form .error {
+	font-size : 93%;
+	color : #B70000;
+	display : block;
+}
+
+.mw_wp_form .akismet_error {
+	display: block;
+}
+
+.vertical-item {
+	display: block;
+}
+.vertical-item+.vertical-item {
+	margin-top: 5px;
+}
+.horizontal-item+.horizontal-item {
+	margin-left: 10px;
+}
+.mwform-checkbox-field,
+.mwform-radio-field {
+}
+.mwform-checkbox-field label,
+.mwform-radio-field label {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.mwform-checkbox-field input,
+.mwform-radio-field input {
+	margin-right: 5px;
+}
+
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-month,
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year {
+	width: 40%;
+	margin: 0 5px;
+}
+
+.mw-wp-form-deprecated-message {
+	background: #F5A9A9;
+	border: #B40404 solid 2px;
+	border-radius: 5px;
+	font-size: 10px;
+	line-height: 1.6;
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.mwform-file-delete {
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.mwform-tel-field input[type="text"],
+.mwform-zip-field input[type="text"] {
+	display: inline-block;
+	width: auto;
+}

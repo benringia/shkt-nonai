@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* 
+ * Style Name: ベーシック１
+ * Description: ベーシックなビジネス用サイトマップスタイルです。
+ * Version: 1.0
+ */
+ul.sitemap li {
+	background-image: none;
+	list-style-type: none;
+	margin: 2em 0;
+	padding: 0;
+	position: relative;
+}
+ul.sitemap li a {
+	background-color: #E0E9F1;
+	border: 1px solid #B0C1D4;
+	display: block;
+	line-height: 25px;
+	padding: 3px 10px 2px;
+	position: relative;
+	text-indent: 0;
+}
+ul.sitemap ul {
+	background: none repeat scroll 0 0 transparent;
+	margin: 10px 0 0;
+	position: relative;
+}
+ul.sitemap ul ul  {
+	background: none repeat scroll 0 0 transparent;
+	margin: 0;
+	position: relative;
+}
+ul.sitemap li li {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+ul.sitemap li li {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+ul.sitemap li li a {
+	background: url("./images/list_mark_child03.png") no-repeat scroll 10px center transparent;
+	border: medium none;
+	color: #333333;
+	font-weight: normal;
+	margin-bottom: 0;
+	padding: 0 10px 0 27px;
+	position: relative;
+}
+ul.sitemap li li a:hover {
+	background-color: #C3DFF3;
+	background-position: 12px center;
+	color: #2F6EAE;
+	position: relative;
+}

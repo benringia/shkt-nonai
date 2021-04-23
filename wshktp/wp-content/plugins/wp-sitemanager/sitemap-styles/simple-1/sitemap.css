@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* 
+ * Style Name: シンプル１
+ * Description: シンプルなビジネス用サイトマップスタイルです。
+ * Version: 1.0
+ */
+ ul.sitemap {
+	background: none 0 0 #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+ul.sitemap li {
+	background: url("./images/line_dotted_gray.png") repeat-x 0 1.8em;
+	font-size: medium;
+	list-style-type: none;
+	margin: 12px 0;
+	padding: 0 0 12px;
+	text-indent: 0;
+}
+ul.sitemap li a {
+	background: url("./images/list_mark_parent04.png") no-repeat left center;
+	color: #666666;
+	display: inline-block;
+	line-height: 32px;
+	padding-left: 25px;
+	text-decoration: none;
+}
+ul.sitemap li a:hover {
+	text-decoration: underline;
+}
+ul.sitemap ul {
+	margin: 0;
+}
+ul.sitemap li li {
+	background: none repeat scroll 0 0 transparent;
+	font-size: small;
+	margin: 7px 0 0;
+	padding: 1px 0 0 27px;
+}
+ul.sitemap li li a {
+	background: url("./images/list_mark_child04.png") no-repeat left center;
+	line-height: normal;
+	padding-left: 15px;
+}
+ul.sitemap li li li {
+	padding-left: 15px;
+}
+ul.sitemap li li li a {
+	background: url("./images/list_mark_child04.png") no-repeat left center;
+}

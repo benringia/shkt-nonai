@@ -1,0 +1,5 @@
+AuthUserFile /home/1606505215/webstyle2-jp/public_html/shkt-nonai/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Enter YourPassword"
+AuthType Basic
+require user nonai
